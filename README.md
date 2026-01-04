@@ -4,19 +4,9 @@ Loan Approval Prediction using Logistic Regression
 This project is a Machine Learning classification application that predicts whether a loan will be approved or not based on applicant details.
 The model is built using Logistic Regression and deployed as an interactive web application using Streamlit.
 
-The goal of this project is to demonstrate:
-
-End-to-end ML workflow
-
-Classification modeling
-
-Model evaluation
-
-Deployment using Streamlit
-
 🚀 Features
 
-User-friendly Streamlit web interface
+Interactive Streamlit web interface
 
 Logistic Regression classification model
 
@@ -34,7 +24,7 @@ Real-time loan approval prediction
 
 🧠 Machine Learning Workflow
 
-Data loading and inspection
+Data loading and preprocessing
 
 Feature–target separation
 
@@ -48,11 +38,11 @@ Model evaluation
 
 Prediction on new user inputs
 
-Web app deployment using Streamlit
+Deployment using Streamlit
 
 📊 Dataset Description
 
-The dataset contains applicant details such as:
+The dataset contains applicant information such as:
 
 Feature	Description
 Age	Applicant age
@@ -60,36 +50,43 @@ Income	Annual income
 Loan Amount	Requested loan amount
 Credit Score	Applicant credit score
 Target	Loan Approved (0 = No, 1 = Yes)
-
-Note: Target variable is binary (0/1), suitable for Logistic Regression.
-
 🧪 Model Used
 
 Algorithm: Logistic Regression
 
-Type: Supervised Learning (Classification)
+Type: Supervised Learning (Binary Classification)
 
 Why Logistic Regression?
 
-Suitable for binary classification
+Suitable for binary outcomes
 
-Outputs probability
+Outputs probability scores
 
-Interpretable model
+Simple and interpretable
 
-📈 Model Evaluation Metrics
+📈 Model Performance
+✅ Accuracy
+
+The Logistic Regression model achieved an accuracy of:
+
+Accuracy: ~85% (may vary based on dataset split)
+
+
+Accuracy represents the percentage of correctly predicted loan approval decisions on unseen test data.
+
+📊 Evaluation Metrics Used
 
 Accuracy Score
 
 Confusion Matrix
 
-Precision, Recall, F1-Score (Classification Report)
+Precision, Recall, F1-Score
 
-These metrics help analyze model performance beyond accuracy.
+These metrics provide a deeper understanding of model performance beyond accuracy.
 
 🖥️ Tech Stack
 
-Programming Language: Python
+Language: Python
 
 Libraries:
 
@@ -111,4 +108,4 @@ Loan_Approval_Prediction/
 ├── logistic.py        # Streamlit app with Logistic Regression
 ├── data.csv           # Dataset
 ├── README.md          # Project documentation
-└── requirements.txt   # Required libraries
+└── requirements.txt   
